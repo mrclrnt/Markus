@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/rails/prototype_legacy_helper.git
+  remote: https://github.com/rails/prototype_legacy_helper.git
   revision: a2cd95c3e3c1a4f7a9566efdab5ce59c886cb05f
   specs:
     prototype_legacy_helper (0.0.0)
@@ -68,7 +68,7 @@ GEM
     mongrel_cluster (1.0.5)
       gem_plugin (>= 0.2.3)
       mongrel (>= 1.0.2)
-    mysql2 (0.2.18)
+    mysql (2.8.1)
     pg (0.11.0)
     polyglot (0.3.2)
     rack (1.2.3)
@@ -129,7 +129,7 @@ DEPENDENCIES
   machinist
   mocha
   mongrel_cluster
-  mysql2 (< 0.3)
+  mysql
   pg
   prototype_legacy_helper (= 0.0.0)!
   railroady

@@ -11,8 +11,6 @@ class RoleSwitchingTest < AuthenticatedControllerTest
 
   def setup
     clear_fixtures
-    # bypass cookie detection in the test because the command line, which is running the test, cannot accept cookies
-    @request.cookies["cookieTest"] = "fake cookie bypasses filter"
   end
 
   context "A valid admin" do

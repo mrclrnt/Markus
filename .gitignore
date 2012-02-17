@@ -24,6 +24,3 @@ log/
 
 # MarkUs Review poster tool credentials file
 .markusdev-creds
-
-# Eclipse generated project file
-/.project

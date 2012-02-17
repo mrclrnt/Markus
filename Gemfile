@@ -24,7 +24,7 @@ gem "dynamic_form"
 # To be removed
 gem "prototype_legacy_helper",
     "0.0.0",
-    :git => "git://github.com/rails/prototype_legacy_helper.git"
+    :git => "https://github.com/rails/prototype_legacy_helper.git"
 
 # If you are a MarkUs developer and use PostgreSQL, make sure you have
 # PostgreSQL header files installed (e.g. libpq-dev on Debian/Ubuntu).
@@ -39,8 +39,7 @@ end
 # Then install your bundle by:
 #   bundle install --without postgresql sqlite
 group :mysql do
-  # FIXME: mysql2 0.3 is incompatible with rails 3.0.x which we use currently
-  gem "mysql2", "< 0.3"
+  gem "mysql"
 end
 
 # If you are a MarkUs developer and use SQLite, make sure you have

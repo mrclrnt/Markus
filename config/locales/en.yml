@@ -16,7 +16,6 @@ en:
     logging_in:         "Logging in..."
     login:              "Login"
     login_failed:       "Login failed"
-    cookies_off:        "Please configure your browser to accept cookies."
     password_not_blank: "Your password must not be blank."
     username_not_blank: "Your username must not be blank."
     username_and_password_not_blank: "Your username and password must not be blank."
@@ -377,7 +376,6 @@ en:
       replace:              "Replace"
       delete:               "Delete"
       can_begin_grading:    "Can begin grading"
-      section:              "Section"
 
     grade_entry_forms:
       blank_field: "can't be blank"
@@ -589,7 +587,7 @@ en:
       not_allowed_to_form_group: "You are not allowed to form groups yourself for this assignment.
             Please wait until the instructor forms groups."
       invitations: "Invitations"
-      invited_by: "You have been invited by %{inviter_first_name} <span class=\"last_name\">%{inviter_last_name}</span>"
+      invited_by: "You have been invited by <span class=\"last_name\">%{inviter_last_name}</span>%{inviter_first_name}"
       decline_invitation: "Are you sure you want to decline this invitation?"
       form_own_group: "Form your own group"
       form_group: "The groups must be from <strong>%{group_min}</strong> to <strong>%{group_max}</strong> people."
@@ -602,7 +600,7 @@ en:
       url_group_repository: "URL to your group's repository"
       group_properties: " Group Properties "
       students_can_form_groups: " Students can form groups. "
-      invalid_override: "Instructor forms groups."
+      instructor_form_groups: "Instructor forms groups."
       student_work_alone: "Students work alone"
       group_credits: "Your group has <strong>%{available_grace_credits}</strong> available grace credits"
       invite: "Invite"
@@ -656,7 +654,6 @@ en:
       edit_grader:        "Edit a Grader"
       manage_graders:     "Manage Graders"
       graders:            "Graders"
-      section:            "Section"
       all_graders:        "All Graders"
       assigned_graders:   "Assigned Graders"
       possible_graders:   "Possible Graders"
@@ -743,7 +740,7 @@ en:
         last_name:      "Last Name"
         full_name:      "Full Name"
         user_type:      "Type"
-        grace_credits:  "Grace Credits Left"
+        grace_credits:  "Grace Credits"
         section:        "Section"
         display_grader_names_to_students: "Display grader names to students?"
 
@@ -1107,8 +1104,7 @@ en:
     account_disabled: "This account has been disabled"
 
     #app/views/main/_assignment_info_summary.erb
-
-    assignment_average:        "Assignment Average: %{results_average}%"
+    assignment_average:        "Assignment Average:"
     assignments_submitted:     "Assignments Submitted:"
     assignments_graded:        "Assignments Graded:"
     refresh_graph:             "Refresh the graph"
