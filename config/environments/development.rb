@@ -116,6 +116,11 @@ Markus::Application.configure do
   AUTOMATED_TESTS_REPOSITORY = "#{::Rails.root.to_s}/data/dev/automated_tests"
 
   ###################################################################
+  # Directory where the Automated Plagiarism Repositories will be created.
+  # make sure markus is allowed to write to this directory
+  AUTOMATED_PLAGIARISM_REPOSITORY = "#{::Rails.root.to_s}/data/dev/automated_plagiarism"
+
+  ###################################################################
   # Set this to true or false if you want to be able to display and annotate
   # PDF documents within the browser.
   PDF_SUPPORT = false

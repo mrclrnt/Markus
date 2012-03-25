@@ -1133,6 +1133,16 @@ fr:
         tokens_no_more_available: "<span class=\"prop_label\">Jetons disponibles:</span >pas de jetons disponibles"
         tokens_available: "<span class=\"prop_label\">Jetons disponibles:</span> %{tokens}"
 
+    #Plagiarism Detection
+    automated_plagiarism:
+      automated_plagiarism: "Détection de plagiat"
+      excluded_files: "Fichiers exclus"
+      excluded_files_description: "Format: Séparer les noms par une virgule - Exemple: file1.java,file2.java"
+      minimum_similarity_rate: "Taux de similarité minimal"
+      minimum_similarity_rate_description: "Format: % - Exemple: 20%"
+      maximum_detection_report: "Nombre maximal de détections"
+      allow_graders: "Autorise les enseignants à lancer une détection de plagiat"
+
 #Missing Activerecord Translations for french
     datetime:
       distance_in_words:

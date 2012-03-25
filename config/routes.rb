@@ -76,6 +76,18 @@ Markus::Application.routes.draw do
       end
     end
 
+    resources :automated_plagiarism do
+      collection do
+        get 'manage'
+        post 'update' # because of collection
+        post 'update_positions'
+        get 'update_positions'
+        get 'upload'
+        get 'download'
+        get 'move_criterion'
+      end
+    end
+
     resources :groups do
       collection do
         post 'populate'

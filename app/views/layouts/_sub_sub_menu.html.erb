@@ -5,7 +5,8 @@
   controller.controller_name == 'rubrics' or
   controller.controller_name == 'flexible_criteria' or
   controller.controller_name == 'annotation_categories' or
-  controller.controller_name == 'automated_tests'
+  controller.controller_name == 'automated_tests' or
+  controller.controller_name == 'automated_plagiarism'
 %>
 
 <div id="sub_sub_menu">
@@ -39,10 +40,16 @@
 		    assignment_annotation_categories_path(
 			@assignment)%>
       </li>
-       <li <% if controller.controller_name == 'automated_tests'%>
+      <li <% if controller.controller_name == 'automated_tests'%>
          id="sub_sub_menu_active"
 	  <% end %>>
 	  <%= link_to I18n.t("automated_tests.automated_tests"),
+                manage_assignment_automated_tests_path(@assignment) %>
+      </li>
+      <li <% if controller.controller_name == 'automated_plagiarism'%>
+         id="sub_sub_menu_active"
+	  <% end %>>
+	  <%= link_to I18n.t("automated_plagiarism.automated_plagiarism"), 
                 manage_assignment_automated_tests_path(@assignment) %>
       </li>
   <% end %>

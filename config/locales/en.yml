@@ -1162,6 +1162,16 @@ en:
         tokens_no_more_available: "<span class=\"prop_label\">Tokens available:</span >No more tokens available "
         tokens_available: "<span class=\"prop_label\">Tokens available:</span> %{tokens}"
 
+    #Plagiarism Detection
+    automated_plagiarism:
+      automated_plagiarism: "Plagiarism Detection"
+      excluded_files: "Excluded Files"
+      excluded_files_description: "Format: Separate names by a comma - Example: file1.java,file2.java"
+      minimum_similarity_rate: "Minimum Similarity Rate"
+      minimum_similarity_rate_description: "Format: % - Example: 20%"
+      maximum_detection_report: "Maximum Detection Report"
+      allow_graders: "Allow graders to launch plagiarism detection processes"
+
 #Missing Activerecord Translations for english
     datetime:
       distance_in_words:

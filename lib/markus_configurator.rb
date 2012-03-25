@@ -119,6 +119,16 @@ module MarkusConfigurator
     end
   end
 
+  #Repository for the plagiarism framework
+  #Students file will be compiled, executed and tested in this repository
+  def markus_config_automated_plagiarism_repository
+    if defined? AUTOMATED_PLAGIARISM_REPOSITORY
+      return AUTOMATED_PLAGIARISM_REPOSITORY
+    else
+      return File.join(::Rails.root.to_s, "plagiarism-framework")
+    end
+  end
+
   ###########################################
   # Markus Session cookie configuration
   ###########################################

@@ -366,6 +366,27 @@
   </p>
 </fieldset>
 
+<fieldset>
+  <legend><%= I18n.t("automated_plagiarism.automated_plagiarism") %></legend>
+  <div class="wrapLeft">
+    <%= label_tag :excludedfiles,I18n.t("automated_plagiarism.excluded_files"), :class=>"accordian_label" %>
+    <%= text_field_tag :excludedfiles %>
+    <%= label_tag :excludedfiles,I18n.t("automated_plagiarism.excluded_files_description"), :class=>"inline_label" %>
+    <br/>
+    <%= label_tag :minimumsimilarityrate,I18n.t("automated_plagiarism.minimum_similarity_rate"), :class=>"accordian_label" %>
+    <%= text_field_tag :minimumsimilarityrate, "20%", :size=>"4" %>
+    <%= label_tag :minimumsimilarityrate,I18n.t("automated_plagiarism.minimum_similarity_rate_description"), :class=>"inline_label" %>
+    <br/>
+    <%= label_tag :maximumdetectionreport,I18n.t("automated_plagiarism.maximum_detection_report"), :class=>"accordian_label" %>
+    <%= text_field_tag :maximumdetectionreport, "100", :size=>"5" %>
+    <br/>
+    <%= check_box_tag :allowgraders %>
+    <%= label_tag :allowgraders,I18n.t("automated_plagiarism.allow_graders"), :class=>"inline_label" %>
+
+  </div>
+</fieldset>
+
+
 <%= f.submit t(:submit) %>
 <% end %>
 
